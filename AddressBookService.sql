@@ -22,3 +22,5 @@ insert into address_book values
 ('Sandip','Mehta','Lane 4','Mumbai','Maharashtra','489856','9923991299','sm123@gmail.com'),
 ('Amit','Kumar','K90/78 Allahabad','Allahabad','Uttar Pradesh','451207','8888888888','amitk777@gmail.com'),
 ('Rakhi','Sharma','Street 56','Ajmer','Rajasthan','123456','8558585851','rakhis@gmail.com');
+--retrives all data in address_book
+select* from address_book;
