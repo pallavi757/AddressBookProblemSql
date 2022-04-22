@@ -19,14 +19,8 @@ select * from address_book;
 
 --Insert data in table address_book
 insert into address_book values
-('Sandip','Mehta','Lane 4','Mumbai','Maharashtra','489856','9923991299','sm123@gmail.com'),
-('Amit','Kumar','K90/78 Allahabad','Allahabad','Uttar Pradesh','451207','8888888888','amitk777@gmail.com'),
-('Rakhi','Sharma','Street 56','Ajmer','Rajasthan','123456','8558585851','rakhis@gmail.com');
---retrives all data in address_book
-select* from address_book;
+('Sandip','Mehta','Lane 4','Mumbai','Maharashtra',489856,9923991299,'sm123@gmail.com'),
+('Amit','Kumar','K90/78 Allahabad','Allahabad','Uttar Pradesh',451207,8888888888,'amitk777@gmail.com'),
+('Rakhi','Sharma','Street 56','Ajmer','Rajasthan',123456,8558585851,'rakhis@gmail.com'),
+('Pravin','kumar','Dwarka','Dwarka','Delhi',553200,7902705022,'kumarpravin111@gmail.com');
 
---edit address of Amit
-update address_book
-set Address = 'J90/54 Allahabad' where First_Name = 'Amit';
---retrives all datas in address_book
-select* from address_book;
