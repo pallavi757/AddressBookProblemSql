@@ -54,3 +54,5 @@ update address_book set Name = 'Friend',Type = 'FriendGroup' where First_Name in
 update address_book set Name = 'Family',Type = 'FamilyGroup' where First_Name in ('Amit','Pravin');
 
 select * from address_book;
+--retieves count by type
+select count(First_Name) as FamilyContact from address_book where Type = 'FamilyGroup';
