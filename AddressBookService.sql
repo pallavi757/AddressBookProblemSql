@@ -40,3 +40,8 @@ select* from address_book;
 --retrives count by city and by state
 select State, City, count(State) as 'Count by State', count(City) as 'Count by City' from address_book
 group by State, City;
+
+--retrives contacts of person in city 'Allahabad' in ascending order by FirstName
+select * from address_book
+where City = 'Allahabad'
+order by First_Name asc;
