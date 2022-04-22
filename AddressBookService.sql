@@ -36,3 +36,6 @@ where First_Name = 'Rakhi';
 --retrives all datas in address_book
 select* from address_book;
 
+--retrives person belonging to city 'Allahabad' or state 'Uttar Pradesh'
+select First_Name from address_book where  City = 'Allahabad' or State = 'Uttar Pradesh';
+
