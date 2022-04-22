@@ -24,3 +24,15 @@ insert into address_book values
 ('Rakhi','Sharma','Street 56','Ajmer','Rajasthan',123456,8558585851,'rakhis@gmail.com'),
 ('Pravin','kumar','Dwarka','Dwarka','Delhi',553200,7902705022,'kumarpravin111@gmail.com');
 
+--edit address of Amit
+update address_book
+set Address = 'J90/54 Allahabad' where First_Name = 'Amit';
+--retrives all datas in address_book
+select* from address_book;
+
+--delete contact of person named Rakhi
+delete from address_book
+where First_Name = 'Rakhi';
+--retrives all datas in address_book
+select* from address_book;
+
