@@ -45,3 +45,12 @@ group by State, City;
 select * from address_book
 where City = 'Allahabad'
 order by First_Name asc;
+
+--alter address book to add Name and Type
+Alter table address_book
+Add Name varchar(100), Type varchar(100)
+
+update address_book set Name = 'Friend',Type = 'FriendGroup' where First_Name in ('Sandip');
+update address_book set Name = 'Family',Type = 'FamilyGroup' where First_Name in ('Amit','Pravin');
+
+select * from address_book;
