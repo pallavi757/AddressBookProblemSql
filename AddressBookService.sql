@@ -33,9 +33,10 @@ select* from address_book;
 --delete contact of person named Rakhi
 delete from address_book
 where First_Name = 'Rakhi';
+
 --retrives all datas in address_book
 select* from address_book;
 
---retrives person belonging to city 'Allahabad' or state 'Uttar Pradesh'
-select First_Name from address_book where  City = 'Allahabad' or State = 'Uttar Pradesh';
-
+--retrives count by city and by state
+select State, City, count(State) as 'Count by State', count(City) as 'Count by City' from address_book
+group by State, City;
