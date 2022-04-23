@@ -56,3 +56,10 @@ update address_book set Name = 'Family',Type = 'FamilyGroup' where First_Name in
 select * from address_book;
 --retieves count by type
 select count(First_Name) as FamilyContact from address_book where Type = 'FamilyGroup';
+
+--UC11 to add person in family and friend 
+insert into address_book values
+('Rakesh','Mehta','Lane 4','Mumbai','Maharashtra',489856,9999999999,'rk123@gmail.com','Family','FamilyGroup'),
+('Rahul','Roy','K90/78 Allahabad','Allahabad','Uttar Pradesh',451207,8888888888,'rahul777@gmail.com','Friend','FriendGroup');
+
+select * from address_book;
